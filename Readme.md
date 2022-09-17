@@ -1,4 +1,3 @@
-9. manage state by reducer hook
-1. define reducer
-1. update fetch data
-1. get state from useReducer
+10. Add botstrap ui framework
+1. npm i react-bootstrap bootstrap
+1. update App.js
