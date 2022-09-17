@@ -1,6 +1,4 @@
-8. Fecth products from backend
-1. set proxy in pack.json (FE)
-1. npm i axios
-1. use state hook
-1. use effect hook
-1. use reducer hook
+9. manage state by reducer hook
+1. define reducer
+1. update fetch data
+1. get state from useReducer
