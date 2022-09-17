@@ -1,4 +1,4 @@
-import data from './data';
+ import data from './data';
 
 function App() {
   return (
@@ -8,16 +8,22 @@ function App() {
       </header>
       <main>
         <h1>Featured products</h1>
-        {/* rendering the products */}
+        {/*1. rendering the products */}
 
-        {/* // convert each product to a jsx */}
-        {/* a classname of products & product 4 arrange */}
+        {/* 2.// convert each product to a jsx */}
+        {/*3. a classname of products & product 4 arrangement in css */}
         <div className="products">
           {data.products.map((product) => (
-            // creatin a unique key for child element in list
+            //1. A slug is the part of a URL that identifies a particular page on a website in an easy-to-read form.
+            //2. creatin a unique key for child element in list
             <div className="product" key={product.slug}>
-              <img src={product.image} alt={product.name} />
+              {/* link the img with products details pg */}
+              <a href={`/product/${product.slug}`}>
+                <img src={product.image} alt={product.name} />
+              </a>
+
               <div className="product-info">
+                {/* link the p.name with products details pg */}
                 <a href={`/product/${product.slug}`}>
                   <p>{product.name}</p>
                 </a>
