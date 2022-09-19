@@ -8,6 +8,8 @@ import Col from 'react-bootstrap/Col';
 // import ProductScreen from './ProductScreen';
 import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 
 // 1. accepts 3 argu:- include reducer, current state & the action whicj is reqi 2 change the state
 // 2. payload is where the data is stored
@@ -69,9 +71,9 @@ function HomeScreen() {
       {/* the className attribute is used to set or return the value of an element’s class attribute. Using this property, the user can change the class of an element to the desired class. */}
       <div className="products">
         {loading ? (
-          <div>Loading...</div>
+          <LoadingBox />
         ) : error ? (
-          <div>{error}</div>
+          <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           // using R & C from bootstrap can put items nxt 2 each in a row
           <Row>
