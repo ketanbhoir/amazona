@@ -23,7 +23,8 @@ function App() {
         <main>
           {/* 1st route 4 homescreen */}
           {/* 2nd R 4 product screen */}
-          <Container>
+          {/* mt-3 create space btwn header na name sec */}
+          <Container className="mt-3">
             <Routes>
               {/* : 4 defining a para */}
               <Route path="/product/:slug" element={<ProductScreen />} />

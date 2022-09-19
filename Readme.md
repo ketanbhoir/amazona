@@ -1,3 +1,3 @@
-10. Add botstrap ui framework
-1. npm i react-bootstrap bootstrap
-1. update App.js
+12. Add product screen
+1. fetch product from backend
+1. create 3 columns for image, info and action
